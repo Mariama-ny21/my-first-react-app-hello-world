@@ -1,0 +1,56 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*Hello World app*/
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Moves elements toward the top */
+  height: 100vh;
+  padding-top: 50px; /* Adds spacing */
+  background-color: skyblue;
+}
+
+button:hover {
+  background-color: lightblue !important;
+  transition: 0.3s;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: navy;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #222;
+};
