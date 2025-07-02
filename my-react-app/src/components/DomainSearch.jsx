@@ -19,10 +19,10 @@ const DomainSearch = () => {
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setResult(null);
-    setError('');
+    e.preventDefault(); // Prevents the default form submission (which would reload the page)
+    setLoading(true); // Sets loading state to true (shows "Checking..." on the button)
+    setResult(null); // Clears any previous result
+    setError(''); // Clears any previous error message
     try {
       const data = await getDomainReport(domain);
       setResult(data);

@@ -23,6 +23,27 @@ const customFileButtonStyle = {
   marginLeft: 0
 };
 
+
+/**
+ * FileUpload React component for scanning files using an external service (e.g., VirusTotal).
+ * 
+ * This component allows users to select a file, upload it for scanning, and view the scan result and full report.
+ * It manages file selection, handles asynchronous scan/report requests, and displays user-friendly feedback.
+ * 
+ * State:
+ * - file: The selected file to be scanned.
+ * - result: The initial scan response.
+ * - report: The detailed scan report.
+ * - loading: Indicates if a scan is in progress.
+ * - error: Stores any error messages encountered during scanning.
+ * 
+ * UI:
+ * - File input for selecting a file.
+ * - Button to trigger the scan.
+ * - Displays scan status, links to external reports, and error messages.
+ * 
+ * Note: Requires `scanFile` and `getFileReport` helper functions to be defined elsewhere.
+ */
 const FileUpload = () => {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState('');

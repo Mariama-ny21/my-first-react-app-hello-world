@@ -1,11 +1,11 @@
-require('dotenv').config();
-const express = require('express');
-const cors = require('cors');
-const multer = require('multer');
-const axios = require('axios');
-const FormData = require('form-data');
-const app = express();
-const upload = multer();
+require('dotenv').config(); // Library: Loads environment variables from .env file into process.env
+const express = require('express'); // Framework: Imports the Express web framework for Node.js
+const cors = require('cors'); // Library: Imports CORS middleware to enable Cross-Origin Resource Sharing, allowing the frontend to make requests to the backend
+const multer = require('multer'); // Library: Imports Multer for handling file uploads (multipart/form-data)
+const axios = require('axios'); // Library: Imports Axios for making HTTP requests to the VirusTotal API
+const FormData = require('form-data'); // Library: Imports FormData for constructing form data for file uploads with Axios requests
+const app = express(); // Framework: Creates an Express application instance
+const upload = multer(); // Library: Initializes Multer for parsing multipart/form-data (file uploads)
 
 const API_URL = 'https://www.virustotal.com/vtapi/v2/file/scan';
 const REPORT_URL = 'https://www.virustotal.com/vtapi/v2/file/report';

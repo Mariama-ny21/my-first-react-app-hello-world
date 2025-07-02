@@ -97,3 +97,4 @@ function App() {
 }
 
 export default App;
+// This is the main App component for the React application.
